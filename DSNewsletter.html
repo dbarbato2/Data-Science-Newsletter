@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Data Science Digest</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body style="margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+        <tr>
+            <td style="padding: 10px 0 30px 0;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #cccccc; border-collapse: collapse;">
+                    <tr>
+                        <td style="background-color: #ffffff; border-top: 0px solid #575757; text-align: center; height: 50px;" align="center"><span style="font-size: 11px; color: #aaaaaa; line-height: 200%; font-family: arial; text-decoration: none;">Having trouble viewing this email? <a style="font-size: 11px; color: #aaaaaa; line-height: 200%; font-family: Arial; text-decoration: none; font-weight: bold;" href="http://172.16.40.172/analytics/datasciencedigest/Q12021.html">View it in your browser.</a></span></td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#000000" style="padding: 0px 0 0px 0; color: #ffffff; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+                            <img src="https://hs-datasciencedigest-images.s3.amazonaws.com/aiHeader_vol2.jpg" alt="Data Science Digest - Q1, 2021" width="100%" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+                                        <b>Leveraging data to link risk and the real estate market</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td width="260" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://hs-datasciencedigest-images.s3.amazonaws.com/selling-home.jpg" alt="" width="100%" height="100%" style="display: block;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td style="font-size: 0; line-height: 0;" width="20">
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
+                                        The team has been busy examining the Multiple Listing Service (MLS) data purchased from data aggregator Attom early in 2020 to see what elements might
+                                        be able to help us further our pricing and underwriting segmentation. While the data has anticipated uses ranging from pre-fill to proactively monitoring
+                                        one's book of business for any properties going on the market, it turns out there may be other insights to be found. Working with Product Operations,
+                                        <a href="mailto:tanner.kulbashian@homesite.com">Tanner Kulbashian</a> was able to dig into the data to try and identify pockets of Homesite business linked
+                                        to the MLS data that was particularly unprofitable. By using classification techniques, there were 2 distinct groups identified. The first is a larger set of
+                                        properties where the home was either recently sold under a short sale or was real estate owned (REO) when sold. While this cohort makes up a small percentage
+                                        of homes sold on the market, average loss ratios range between 10 and 20 points above the average Homesite risk. The second cohort is a much smaller but even
+                                        riskier group of properties. These include homes where the recent sale price was below $30K as well as those whose sale price was less than halved since the
+                                        previous time they sold. Due to the relatively smaller size of this cohort and the fact that they are experiencing loss ratios exceeding 50 points above the average risk,
+                                        investigations are underway to determine how the business can be declined going forward. Over time all of these fields will be tested and incorporated into multivariate
+                                        models such as our inspection and QUEST underwriting models, but we look forward to addressing these risks and leveraging this important data as soon as possible.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+                                        <b>American Family Data and the Homesite Rating Plan: What can we learn?</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td width="260" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://hs-datasciencedigest-images.s3.amazonaws.com/lightning.png" alt="" style="display: block;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td style="font-size: 0; line-height: 0;" width="20">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
+                                        Part of American Family’s Property Pricing Development team’s responsibility is to deliver modeled indications for American Family’s by peril HO3, HO4, and HO6
+                                        rating plans. With the restructure fast approaching, we determined that the last efforts of the combined team would focus on Enterprise 1 Platform (E1P).
+                                        Following a round of data preparation, we were able to complete an extensive comparison between American Family’s by-peril rating plan and Homesite’s Mosaic plan,
+                                        which is the base for E1P. What are some of the key differences we found? First, the peril structure between the two plans is somewhat different. For example,
+                                        American Family had not yet modeled Lightning as its own separate peril prior to this exercise. We also created variables to mimic Homesite’s claim rating for
+                                        historical property and auto claims which are easier to use from a modeling standpoint. We adjusted dwelling information to match, removing percent of basement
+                                        finished in favor of square footage. We did retain some variables such as location of washing machine and customer late payments that don’t exist in the current
+                                        Homesite plan, but could be added to E1P. We have hope that variables that were not able to be included due to a lack of statistical significance will look better
+                                        when we can model on enterprise property data. In the future, the Property COE Data Science group will be able to leverage knowledge and data from across the
+                                        enterprise to create rating plans more sophisticated than any one operating company has currently. Reach out to
+                                        <a href="mailto:jmeyer@amfam.com">Jennifer Meyer</a> with any questions.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+                                        <b>A prototype AI model that teaches itself.... subrogation</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td width="260" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://hs-datasciencedigest-images.s3.amazonaws.com/smartAI.jpeg" alt="" style="display: block;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td style="font-size: 0; line-height: 0;" width="20">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
+                                        As part of Homesite's recent migration to Guidewire's ClaimCenter, the Data Science team needed to make sure that the existing claims models identifying
+                                        subrogation and fraud likelihood would still continue to function. The end goal, however, was not just functionality but a more complete integration of the
+                                        model into the claims system. Toward that end, we wanted to remove model reliance on Homesite-specific predictors that would allow the model to be called from
+                                        within ClaimCenter and to be tested on other operating companies data as well. The question was, how do we remove those dozens of predictors and still maintain
+                                        accurate predictions? The answer was to use more advanced Natural Language Processing (NLP) techniques. While these models have always leveraged NLP techniques
+                                        to mine the unstructured text found in our claims notes, <a href="mailto:rajat.handa@homesite.com">Rajat Handa</a> stepped it up with use of a state-of-the-art
+                                        technique recently open-sourced by Google called BERT. The results were even better than we would have expected and it turns out that with the newer approach, we
+                                        can not only maintain the same level of predictive power, but we can actually improve upon it. While he was at it, Rajat experimented with some approaches for
+                                        creating a continuous learner, which are AI models that re-train themselves on some defined cadence. Creating models that are continuous learners allow for
+                                        improved scalability and increased adaptability to changing patterns in the data. This model will not only improve subrogation predictions but also serve as a
+                                        prototype for future models where we can experiment with this approach. With proper monitoring and oversight in place, there is an opportunity to have any of
+                                        our non-filed models utilize this cloud-native autonomous learning framework in the future. Please reach out to Rajat or
+                                        <a href="mailto:anir.bhattacharyya@homesite.com">Anirban Bhattacharyya</a> with any questions.
+                                </tr>
+                                <tr>
+                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+                                        <b>Keeping a close eye on all of our AI models</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td width="260" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://hs-datasciencedigest-images.s3.amazonaws.com/monitoring.jpeg" alt="" style="display: block;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td style="font-size: 0; line-height: 0;" width="20">
+                                                    &nbsp;
+                                                </td>
+                                                <td width="260" valign="center">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://hs-datasciencedigest-images.s3.amazonaws.com/autoMonitoring.jpeg" alt="" width="100%" height="100%" style="display: block;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
+                                        One of the most important and often overlooked aspects of building predictive models is making sure that they continue to function both effectively and as
+                                        expected long after the building and deployment phases are over. We know this is a critical step in the life cycle of a model and have been investing time and
+                                        resources into developing a solution that can serve as the foundation for all of our monitoring activities. The team has been hard at work developing repositories
+                                        of model scores that update on a daily basis. This means that users can go into standard SQL databases and determine how each model is performing as well as
+                                        understand how a model would have scored a particular policy or quote if it had been in production at the time. The retention scores have already been integrated into
+                                        regular data feeds to GEICO, prioritizing the risk level on renewing policies and we're exploring several other exciting use cases. Please reach out to
+                                        <a href="mailto:heema.pancholi@homesite.com">Heema Pancholi</a> or <a href="mailto:ksah@homesite.com">Khushboo Sah</a> with any questions and view the documentation
+                                        <a href="https://theexperimentationlab.atlassian.net/wiki/spaces/AN/pages/1551040571/Monitoring">page</a> for the growing library of available scores.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
+                                        <b>Additional Information</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px 0 30px 0; color: #ff153643ffff; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
+                                        If you’re ever looking for additional information regarding active projects or to track implementation of some of our recent models, we’re always adding to and updating our 
+                                        <a href="https://theexperimentationlab.atlassian.net/wiki/spaces/AN/overview">Confluence</a> page, be sure to check it out!
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#000000" style="padding: 30px 30px 30px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="color: #aaaaaa; font-family: Arial, sans-serif; font-size: 14px;" width="75%">
+                                    <b>Data Science Digest</b><br/>
+                                        <i>Darrel Barbato</i><br/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
